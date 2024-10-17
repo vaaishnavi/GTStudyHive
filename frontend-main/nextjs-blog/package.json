@@ -1,0 +1,39 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "webpack --mode=production --node-env=production",
+    "dev": "next dev",
+    "start": "next start",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production",
+    "watch": "webpack --watch",
+    "serve": "webpack serve"
+  },
+  "dependencies": {
+    "@googlemaps/js-api-loader": "^1.16.2",
+    "@react-google-maps/api": "^2.19.2",
+    "@vis.gl/react-google-maps": "^0.7.1",
+    "firebase": "^10.8.1",
+    "firebaseui": "^6.1.0",
+    "next": "^14.1.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@webpack-cli/generators": "^3.0.7",
+    "css-loader": "^6.10.0",
+    "html-webpack-plugin": "^5.6.0",
+    "style-loader": "^3.3.4",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4",
+    "workbox-webpack-plugin": "^7.0.0"
+  },
+  "version": "1.0.0",
+  "description": "My webpack project",
+  "name": "my-webpack-project"
+}

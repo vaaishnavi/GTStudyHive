@@ -1,0 +1,541 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+.title {
+  margin: 0 0 1rem;
+  line-height: 1.15;
+  font-size: 3.6rem;
+}
+
+.title {
+  text-align: center;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.description {
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  max-width: 800px;
+  margin-top: 3rem;
+}
+
+.card {
+  margin: 1rem;
+  flex-basis: 45%;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition:
+    color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: #0070f3;
+  border-color: #0070f3;
+}
+
+.card h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.logo {
+  height: 1em;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+/* All Sessions Page Styles */
+
+.allSessions {
+  font-family: Inter;
+  /* background-color: #FFFFCC; */
+}
+
+.allSessions h1 {
+  margin: 1em;
+  font-weight: bold;
+  color: #e2d7b1;
+  font-size: 50px;
+  text-shadow: 1px 1px 0px #b4a368;
+}
+
+.allContainer {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  width: 660px;
+  height: 250px;
+}
+
+.sessionsContainer :hover {
+  background-color: #eaeaea;
+}
+
+.filterContainer {
+  background-color: #e2d7b1;
+  width: 420px;
+  height: 80px;
+  padding: 0.7em;
+  padding-top: -0.7em;
+  border-radius: 33px;
+  margin: 1em;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 1.5px 1.5px 1.5px 1.5px rgb(0 0 0 / 20%);
+}
+
+.filterContainer h4 {
+  margin: 10px;
+}
+
+.filterContainer select {
+  margin: 0px 10px;
+  width: 10em;
+  height: 30px;
+  padding: 0.4em;
+  font-size: 0.8em;
+  border-radius: 17px;
+  font-family: Inter;
+  border-right: 16px solid transparent;
+  border-width: 0px;
+}
+
+.sessionDetails {
+  background: #ffffff;
+  display: flex;
+  border-radius: 5px;
+  margin: 1em;
+  padding: 1em;
+  position: relative;
+  /* box-shadow: 2px 2px 5px rgba(0,0,0,0,05); */
+  box-shadow: 1.5px 1.5px 1.5px 1.5px rgb(0 0 0 / 20%);
+  border: #555555;
+  border-width: 1px;
+}
+
+
+.sessionDetails h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+  color: #000;
+}
+
+.sessionDetails p {
+  margin: 5px;
+  font-size: 0.9em;
+  color: #555555;
+}
+
+.infoBox {
+  width: 300px;
+}
+
+.locationBox {
+  background: #e2d7b1;
+  border-radius: 5px;
+  padding: 5px;
+  width: 150px;
+}
+
+.locationContainer {
+  flex-direction: row;
+}
+
+button.join {
+  /* margin-left: 30%; */
+  position: relative;
+  margin-top: 15px;
+  
+  align-self: center;
+  font-size: 15px;
+  background-color: #d5c27c;
+  border: 0px;
+  border-radius: 5px;
+  left:2.8em;
+  padding: 8px 18px;
+}
+
+button.join:hover {
+  background-color: #9c895a; /* Change to the desired color */
+  /* Add any other styles you want to apply on hover */
+}
+
+button.create {
+  margin-left: 40%;
+  margin-top: 15px;
+  align-self: center;
+  font-size: 15px;
+  background-color: #d5c27c;
+  border: 0px;
+  border-radius: 5px;
+  padding: 8px 18px;
+  
+}
+
+button.create:hover {
+  background-color: #9c895a; /* Change to the desired color */
+  /* Add any other styles you want to apply on hover */
+}
+
+.locationText {
+  text-align: center;
+}
+
+.sessionsContainer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.filterButton {
+  height: 30px;
+  margin: 40px 10px;
+  padding: 0.35em;
+  width: 8em;
+  background-color: white;
+  border-radius: 8px;
+  border-color: white;
+  text-align: start;
+  font-family: Inter;
+}
+
+.displayText {
+  margin: 2em;
+}
+
+
+
+/* Login and Signup Css*/
+
+.loginPage {
+  font-family: Inter;
+  align-items: center;
+  margin:3em;
+}
+
+.loginContainer h1 {
+  font-family: Inter;
+  font-weight: bold;
+  color: #e2d7b1;
+  font-size: 55px;
+  text-shadow: 1px 1px 0px #b4a368;
+  margin:.4em;
+}
+.loginContainer h2 {
+  font-family: Inter;
+  margin:1em;
+}
+.loginContainer {
+  font-family: Inter;
+  width: 40%;
+  padding: 1em;
+  text-align: center;
+  padding-bottom: 3em;
+  position: absolute;
+  left: 30%;
+  border-radius: 20px;
+  box-shadow: 1.5px 1.5px 1.5px 1.5px rgb(0 0 0 / 20%);
+  background-image: url('../public/images/loginBack.png');
+  background-size: cover;
+  background-position-x: -15px;
+}
+.loginContainer a {
+  color: #d9bc53;
+}
+.loginContainer p {
+  font-size: 20px;
+}
+.loginContainer div {
+  display: block;
+  margin:2em;
+}
+.loginContainer label {
+  margin: 0.2em;
+  
+  text-align: left;
+  margin-right: 3em;
+}
+.loginContainer input {
+  padding:0.5em;
+  width: 200px;
+  padding-right: 1em;
+  font-size: 17px;
+  border-radius: 10px;
+}
+.loginShow {
+  border-radius: 20px;
+  font-size: 0.9em;
+  padding: 0.4em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-bottom: 1.5em;
+  margin-top: 3em;
+  background-color: #e2d7b1;
+}
+.loginButton {
+  border-radius: 20px;
+  font-size: 1em;
+  padding: 0.4em;
+  padding-left: 1em;
+  padding-right: 1em;
+  color:white;
+  background-color: #222222;
+  margin-bottom: 1em;
+}
+
+.loginPage button {
+  font-family: Inter;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 0.8em;
+}
+
+.landingPage {
+  display: flex;
+  justify-content: center;
+}
+
+.mapContainer {
+  flex-direction: row;
+}
+
+.map {
+  height: "600px"; 
+  width: "600px";
+  margin: 50px;
+  border: 15px solid #b4a368;
+  border-radius: 10px;
+  box-shadow: 1.5px 1.5px 1.5px 1.5px rgb(0 0 0 / 20%);
+}
+
+.buttons {
+  display: flex;
+}
+
+.login {
+  margin: 10px;
+  margin-top: 40px;
+  margin-left: 30px;
+  font-size: 20px;
+  background-color: #d6c37d;
+  border: 0px;
+  border-radius: 5px;
+  padding: 3px 10px;
+}
+
+.nav {
+  margin: 10px;
+  margin-top: 40px;
+  margin-left: 90px;
+  font-size: 20px;
+  background-color: eaeaea;
+  border: 0px;
+  border-radius: 5px;
+
+  padding: 3px 10px;
+}
+
+.friends {
+  margin: 10px;
+  margin-top: 40px;
+  margin-left: 30px;
+  font-size: 20px;
+  background-color: eaeaea;
+  border: 0px;
+  border-radius: 5px;
+
+  padding: 3px 10px;
+}
+
+.img1 {
+  position: absolute;
+  top: 0px;
+  left: 1319px;
+  width: 200px;
+  height: 200px;
+  z-index: -1;
+}
+
+.img2 {
+  position: absolute;
+  top: 500px;
+  left: 1319px;
+  width: 200px;
+  height: 250px;
+}
+
+.img3 {
+  position: absolute;
+  top: 600px;
+  left: 740px;  
+  width: 300px;
+  height: 150px;
+  z-index: -1;
+}
+
+.img4 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 195px;
+  height: 190px;
+}
+
+.img5 {
+  position: absolute;
+  top: 0px;
+  left: 520px;
+  width: 300px;
+  height: 260px;
+  z-index: -1;
+}
+
+
+.users {
+  width: 795px;
+  margin: 12px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.eachUser {
+  background: #ffffff;
+  display: flex;
+  border-radius: 5px;
+  margin: 1em;
+  padding: 1em;
+  width: 20em;
+  position: relative;
+  /* box-shadow: 2px 2px 5px rgba(0,0,0,0,05); */
+  box-shadow: 1.5px 1.5px 1.5px 1.5px rgb(0 0 0 / 20%);
+  border: #555555;
+  border-width: 1px;
+}
+
+.addFriend {
+  margin-left: 160px;
+  position: absolute;
+  margin-top: 0px;
+  align-self: center;
+  font-size: 15px;
+  background-color: #d5c27c;
+  border: 0px;
+  border-radius: 5px;
+  left:2.8em;
+  padding: 8px 18px;
+}
+
+/* UserProfile Styles */
+
+.profilePicture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1em;
+}
+
+/* Add these styles to the existing Home.module.css file */
+
+.fileInputLabel {
+  border-radius: 20px;
+  font-size: 0.7em;
+  padding: 0.4em 1em;
+  margin-bottom: 3em;
+  margin-top: 1em;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/*Login and signup new*/
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formContainer > div {
+  margin-bottom: 10px;
+}
+
+.formContainer label {
+  width: 120px;
+  margin-right: 210px;
+  margin-top: 5px; /* Adjust the width as needed */
+}
+
+.formContainer input[type="text"],
+.formContainer input[type="email"],
+.formContainer input[type="password"],
+.formContainer input[type="tel"]  {
+  width: 310px;
+  margin-bottom: 0.1em;
+  padding-left: 0.7em;
+  border-radius: 15px;
+  border-color: rgba(0,0,0,0);
+  background-color: #dbdbdb;
+  height: 30px; /* Adjust the width as needed */
+}
+
+
+.formContainer input[type="password"] {
+  margin-bottom: 2em;
+}
+
+.formContainer button {
+  margin-top: 10px;
+}
